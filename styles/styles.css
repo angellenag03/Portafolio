@@ -1,0 +1,103 @@
+body {
+    background: #191b2a;
+    font-family: monospace;
+    margin: 40px;
+}
+
+header {
+   background: #0e0f18; 
+}
+
+h1 {
+    color: rgb(255, 0, 81);
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px rgba(255, 0, 81, 0.4);
+}
+
+h2 {
+    color: #62ba88;
+    margin-top: 40px;
+}
+
+
+p {
+    color: rgb(236, 241, 255);
+}
+
+li {
+    color: #c0ffc7;
+    margin-bottom: 6px;
+}
+
+img {
+    border-radius: 25px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.caja {
+    text-align: center;
+    padding: 35px;
+    border-radius: 20px;
+    background: #151524;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.caja:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(255, 0, 81, 0.2);
+}
+
+nav {
+    background: rgba(20, 22, 35, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 0, 81, 0.3);
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #e0e0ff;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Línea animada debajo */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 0, 81);
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 0, 120);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}

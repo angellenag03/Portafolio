@@ -1,0 +1,119 @@
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.social-links a {
+    padding: 12px 22px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: monospace;
+    color: #e4e6fa;
+
+    /* Background glass neon */
+    background: rgba(25, 20, 40, 0.55);
+    backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(255, 0, 81, 0.35);
+    border-radius: 12px;
+
+    /* Glow base */
+    box-shadow: 0 0 12px rgba(255, 0, 81, 0.25);
+
+    transition: 0.25s ease;
+}
+
+/* Hover neon + slight lift */
+.social-links a:hover {
+    color: #ff3d8e;
+    border-color: #ff0051;
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 0 12px rgba(255, 0, 81, 0.4),
+        0 0 20px rgba(255, 0, 81, 0.25);
+}
+
+/* Active / click effect */
+.social-links a:active {
+    transform: scale(0.97);
+}
+
+/* FORMULARIO */
+
+.contact-form {
+    margin-top: 50px;
+    padding: 30px;
+    background: rgba(25, 20, 40, 0.55);
+    border: 1px solid rgba(255, 0, 81, 0.25);
+    border-radius: 18px;
+    box-shadow: 0 0 18px rgba(255, 0, 81, 0.15);
+    backdrop-filter: blur(6px);
+}
+
+.contact-form h2 {
+    color: #ff3d8e;
+    text-shadow: 0 0 8px rgba(255, 0, 81, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Inputs */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+
+    background: rgba(15, 12, 25, 0.7);
+    border: 1px solid rgba(255, 0, 81, 0.35);
+    border-radius: 12px;
+
+    color: #e4e6fa;
+    font-size: 16px;
+    font-family: monospace;
+
+    box-shadow: 0 0 12px rgba(255, 0, 81, 0.15);
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff0051;
+    box-shadow: 0 0 15px rgba(255, 0, 81, 0.4);
+}
+
+/* Labels */
+.contact-form label {
+    font-size: 15px;
+    color: #c0ffc7;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Botón Y2K neon */
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-family: monospace;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #00ff2a, #3dff6a);
+    border: none;
+    border-radius: 12px;
+    color: white;
+
+    box-shadow: 0 0 15px rgba(0, 255, 34, 0.45);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 255, 149, 0.6);
+}

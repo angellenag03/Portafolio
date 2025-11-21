@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angelsn - Portafolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" href="../styles/deluxe.css">
+    <script src="../scripts/carrusel.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Profundizando</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html"> > Inicio</a></li>
+            <li><a href="contacto.html"> > Contacto</a></li> 
+            <li><a href="profundizando.html"> > Profundizando</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Proyectos destacables</h1>
+        <p>haz click en la imagen para llevarte al repositorio del proyecto</p>
+
+    <div class="coverflow-container">
+        <button class="nav-btn left" onclick="moveSlide(-1)">&#10094;</button>
+
+        <div class="coverflow" id="coverflow">
+            <div class="slide-item"> <!-- item 1 -->
+                <a href="https://github.com/angellenag03/Chessdrez" target="_blank" rel="noopener">
+                    <img src="../media/photos/software/Chessdrez.png" alt="Adrejez">
+                </a>
+                <h2>Chessdrez</h2>
+                <p>Juego de ajedrez realizado como proyecto final...</p>
+            </div>
+
+            <div class="slide-item"> <!-- item 2 -->
+                <a href="https://github.com/angellenag03/ConsanaSoft" target="_blank" rel="noopener">
+                    <img src="../media/photos/software/ConsanaSoft.png" alt="ConsanaSoft">
+                </a>
+                <h2>ConsanaSoft</h2>
+                <p>Gestor para obras adjunta a una base de datos...</p>
+            </div>
+
+            <div class="slide-item"> <!-- item 3 -->
+                <a href="https://github.com/angelsn03/Python-Downloader" target="_blank" rel="noopener">
+                    <img src="../media/photos/software/Python Downloader.png" alt="Python Downloader">
+                </a>
+                <h2>Python Downloader</h2>
+                <p>Programa que realicé simplemente porque...</p>
+            </div>
+        </div>
+
+        <button class="nav-btn right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <h1>Flyers y fotos en vivo</h1>
+    <p>angelsn es un artista originario de Hermosillo que se introdujo en el mundo de la música a la temprana edad de 10 años.
+Su interés por la música surgió cuando decidió unirse a una clase de música en su nueva primaria con el fin de hacer amigos.
+A pesar de esta breve experiencia, despertó su gusto por la guitarra. Aunque dejó de tocar por un tiempo, durante la pandemia del 2020, volvió el mundo de la música y decidió retomar la guitarra.
+En 2021, se adentró a lo que es la producción musical gracias a la propuesta de un amigo para crear un mod de Friday Night Funkin' con temática de Doom en compañía de él (mod el cual nunca terminaron), realizando covers de canciones de los juegos y, finalmente, lanzando música original.
+angelsn se caracteriza por ser un artista que gusta de mezclar rock y metal con subgéneros de la electrónica como lo son jungle, dnb, breakbeat, dubstep, techno, glitchcore, hardstyle etc y reinventar canciones para darles un nuevo proposito e intención, cosa que parece ser del agrado de sus fans.</p>
+    <div class="collage">
+        <img src="../media/photos/flyers/angelsn en el yellow blanco.png">
+        <img src="../media/photos/flyers/genis4.png">
+        <img src="../media/photos/flyers/kamehouse30nov.png">
+        <img src="../media/photos/flyers/MI PRIMER FLYER2.png">
+        <img src="../media/photos/flyers/orquideamarchita14mar FINAL 2.png">
+        <img src="../media/photos/flyers/peces de acuario.png">
+        <img src="../media/photos/flyers/tokin mexicano Bv.jpg">
+    </div>
+
+    </main>      
+    <footer>
+        <p>&copy; 2023 Angel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

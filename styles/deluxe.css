@@ -1,0 +1,213 @@
+/* === Deluxe Y2K / Cyberpink Dark Mode CSS === */
+
+/* Global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+/* Background neon gradient */
+body {
+    background: linear-gradient(135deg, #0d0f1a 0%, #191b2a 40%, #3c2045 100%);
+    font-family: monospace;
+    color: #e4e6fa;
+    min-height: 100vh;
+}
+
+/* Center layout */
+main, header, nav, footer {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header h1 {
+    color: #ff0051;
+    text-shadow: 0 0 8px rgba(255, 0, 81, 0.6);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+nav ul li a {
+    color: #e0e0ff;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ff0051;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff3d8e;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Headings */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #ff0051;
+    text-shadow: 0 0 6px rgba(255, 0, 81, 0.4);
+}
+
+h2 {
+    color: #62ba88;
+    margin-top: 40px;
+}
+
+/* Paragraphs */
+p {
+    color: #e4e6fa;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* Lists */
+li {
+    color: #c0ffc7;
+    margin-bottom: 6px;
+}
+
+/* Responsive video */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Grid boxes */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+/* Carrusel neon */
+.carrusel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+.carrusel img {
+    border-radius: 20px;
+    filter: drop-shadow(0 0 12px rgba(255, 0, 81, 0.2));
+}
+
+.carrusel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 81, 0.4);
+    border-radius: 10px;
+}
+
+.collage {
+    columns: 3;                /* 3 columnas estilo Pinterest */
+    column-gap: 20px;
+    margin-top: 30px;
+}
+
+.collage img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    break-inside: avoid;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 81, 0.3));
+    transition: 0.2s ease;
+}
+
+.collage img:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 15px rgba(255, 0, 81, 0.5));
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .collage {
+        columns: 2;
+    }
+}
+@media (max-width: 500px) {
+    .collage {
+        columns: 1;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 0, 81, 0.2);
+    color: #9095b3;
+}
+
+/* === Deluxe Y2K Coverflow Carousel === */
+
+.coverflow-container {
+    position: relative;
+    width: 90%;
+    margin: 50px auto;
+    padding: 40px 0;
+    overflow: hidden;
+
+    /* Glow exterior */
+    filter: drop-shadow(0 0 15px rgba(255, 0, 81, 0.25));
+}
+
+/* H2 dentro del slide */
+.slide-item h2 {
+    color: #ff3d8e;
+    text-shadow: 0 0 6px rgba(255, 0, 81, 0.4);
+    margin: 12px 0;
+    font-size: 22px;
+}
+
+.slide-item img:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 15px rgba(255, 0, 81, 0.6));
+}
+

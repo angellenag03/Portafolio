@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angelsn - Portafolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/techstack.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" href="../styles/deluxe.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="../scripts/carrusel.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Música</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html"> > Inicio</a></li>
+            <li><a href="contacto.html"> > Contacto</a></li> 
+            <li><a href="musica.html"> > Música</a></li>
+            <li><a href="desarrollos.html"> > Desarrollos</a></li>
+            <li><a href="https://github.com/angellenag03/Portafolio"> > Código Fuente</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Proyectos destacables</h1>
+        <p>haz click en la imagen para llevarte al repositorio del proyecto</p>
+
+        <div class="coverflow-container">
+            <button class="nav-btn left" onclick="moveSlide(-1)">&#10094;</button>
+
+            <div class="coverflow" id="coverflow">
+                <div class="slide-item"> <!-- item 1 -->
+                    <a href="https://github.com/angellenag03/Chessdrez" target="_blank" rel="noopener">
+                        <img src="../media/photos/software/Chessdrez.png" alt="Adrejez">
+                    </a>
+                    <h2>Chessdrez</h2>
+                    <p>Juego de ajedrez realizado como proyecto final...</p>
+                </div>
+
+                <div class="slide-item"> <!-- item 2 -->
+                    <a href="https://github.com/angellenag03/ConsanaSoft" target="_blank" rel="noopener">
+                        <img src="../media/photos/software/ConsanaSoft.png" alt="ConsanaSoft">
+                    </a>
+                    <h2>ConsanaSoft</h2>
+                    <p>Gestor para obras adjunta a una base de datos...</p>
+                </div>
+
+                <div class="slide-item"> <!-- item 3 -->
+                    <a href="https://github.com/angelsn03/Python-Downloader" target="_blank" rel="noopener">
+                        <img src="../media/photos/software/Python Downloader.png" alt="Python Downloader">
+                    </a>
+                    <h2>Python Downloader</h2>
+                    <p>Programa que realicé simplemente porque...</p>
+                </div>
+            </div>
+
+            <button class="nav-btn right" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <section class="tech-stack">
+            <h2>Lenguajes y Tecnologías</h2>
+
+            <div class="tech-grid">
+
+                <!-- Devicon (los que sí existen) -->
+                <div class="tech-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                <div class="tech-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                <div class="tech-card"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                <div class="tech-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="tech-card"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+                <div class="tech-card"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+                <div class="tech-card"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+
+                <!-- SimpleIcons (los que NO están en Devicon) -->
+                <div class="tech-card">
+                    <img src="https://cdn.simpleicons.org/springboot" alt="Spring Boot">
+                    <span>Spring Boot</span>
+                </div>
+
+                <div class="tech-card">
+                    <img src="https://cdn.simpleicons.org/express" alt="ExpressJS">
+                    <span>ExpressJS</span>
+                </div>
+
+                <div class="tech-card">
+                    <img src="https://cdn.simpleicons.org/typeorm" alt="TypeORM">
+                    <span>TypeORM</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/angellenag03/Portafolio/html/index.html">Portafolio</a> © 2025 by <a href="https://github.com/angellenag03">Angel Sanchez</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+    </footer>
+</body>
